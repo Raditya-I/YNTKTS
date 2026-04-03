@@ -57,8 +57,8 @@ body {
 .kartu-b {
   visibility: hidden;
   opacity: 0;
-  transform: translateY(10px);
-  transition: all 0.3s ease;
+  transform: translateY(360deg);
+  transition: 1s ease;
 }
 .tombol:hover {
   background: #0F57FF;
@@ -73,7 +73,7 @@ a:hover{
   visibility: visible;
   opacity: 1;
   transform: scale(1);
-  transition: opacity 0.3s ease, transform 0.3s ease, visibility 0s linear 0s;
+  transition: opacity 1.4s ease, transform 1s ease, visibility 0s linear 0s;
 }
 footer {
   position: fixed;
