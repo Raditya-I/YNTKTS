@@ -3,8 +3,81 @@
   padding: 0;
   box-sizing: border-box;
 }
-.kartu {
+body {
+  display: grid;
+  place-items: center;
+}
+.an {
+  position: absolute;
+  font-size: 8px;
+  right: 10px;
+}
+.kartu-d, .kartu-b {
+  width: 85%;
+  height: auto;
+  box-shadow: 0px 0px 25px 5px #DADAE0;
+  border-radius: 12px;
+  text-align: center;
+  padding: 20px;
+  color: #0F57FF;
+  margin: 100px auto;
+  visibility: visible;
+  opacity: 1;
+  transform: scale(1);
+  transition: opacity 0.3s ease, transform 0.3s ease, visibility 0s linear 0s;
+}
+.kartu-d h1 {
+  font-size: 28px;
+}
+.kartu-d h4{
+  font-size: 18px;
+  font-weight: 500;
+}
+.tombol {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 40px;
+  border-radius: 12px;
+  background: none;
+  border: 1px solid #0F57FF;
+  font-size: 12px;
+  font-weight: 800;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.tombol a {
+  display: inline;
+  text-decoration: none;
+  color: #0F57FF;
+  text-decoration-color: none;
+}
+.kartu-b {
+  visibility: hidden;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: all 0.3s ease;
+}
+.tombol:hover {
+  background: #0F57FF;
+  color: white!important;
+}
+a:hover{
+  background: #0F57FF;
+  color: white!important;
+}
+#kartu-b:target {
   display: block;
-  width: 75%;
-  height: 50%;
+  visibility: visible;
+  opacity: 1;
+  transform: scale(1);
+  transition: opacity 0.3s ease, transform 0.3s ease, visibility 0s linear 0s;
+}
+footer {
+  position: fixed;
+  bottom: 0px;
+  text-align: center;
+  font-size: 12px;
 }
